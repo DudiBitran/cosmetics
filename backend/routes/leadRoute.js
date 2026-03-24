@@ -17,6 +17,7 @@ router.post("/leads", async (req, res) => {
     const lead = {
       ...req.body,
       createdAt: new Date().toLocaleString("he-IL", {
+        timeZone: "Asia/Jerusalem",
         day: "2-digit",
         month: "2-digit",
         year: "numeric",
