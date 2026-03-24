@@ -1,0 +1,105 @@
+.red-dot {
+  color: #b98b58;
+}
+
+form {
+  width: min(760px, 96vw);
+  margin: 0 auto;
+  padding: 2.3rem 2rem 2.1rem;
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at 90% 8%, rgba(214, 193, 166, 0.18), transparent 34%),
+    linear-gradient(180deg, var(--card) 0%, #faf5ef 100%);
+  border: 1px solid #ded2c3;
+  box-shadow:
+    0 16px 36px rgba(80, 61, 43, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+
+form > div {
+  margin-bottom: 1.15rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+input {
+  width: 100%;
+  border: 1px solid #e0d5c8;
+  border-radius: 14px;
+  padding: 0.95rem 1rem;
+  font-size: 1rem;
+  color: var(--text);
+  background: #fffdfb;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+input::placeholder {
+  color: #94887a;
+}
+
+input:hover {
+  background: #ffffff;
+  border-color: #d6c8b8;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--cta);
+  box-shadow: 0 0 0 4px var(--focus), 0 8px 18px rgba(97, 74, 49, 0.13);
+}
+
+form button[type="submit"] {
+  width: 100%;
+  margin-top: 0.7rem;
+  border: none;
+  border-radius: 14px;
+  padding: 1.05rem 1rem;
+  background: linear-gradient(110deg, var(--cta), #c7ad87);
+  color: #fff;
+  font-size: 1.03rem;
+  font-weight: 700;
+  letter-spacing: 0.15px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.25s ease;
+}
+
+form button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(83, 64, 43, 0.3);
+  background: linear-gradient(110deg, var(--cta-hover), #b69970);
+}
+
+form button[type="submit"]:active {
+  transform: translateY(0);
+}
+
+.error {
+  margin-top: 0.45rem;
+  color: var(--error);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.serverError {
+  margin-bottom: 1.2rem;
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  border: 1px solid #efc7c7;
+  background: #fff3f3;
+  color: #b35f5f;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 768px) {
+  form {
+    width: 100%;
+    padding: 1.35rem 0.95rem 1.25rem;
+    border-radius: 16px;
+  }
+}
