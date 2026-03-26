@@ -51,7 +51,7 @@ function LeadForm() {
         const response = await leadService.createLead(values);
         ReactGA.event({
           category: "Form",
-          action: "form_submit",
+          action: "טופס_נשלח",
           label: "lead_form",
         });
         setTimeout(
@@ -70,7 +70,7 @@ function LeadForm() {
           setServerError(response);
           ReactGA.event({
             category: "Form",
-            action: "form_error",
+            action: "טופס_לא_נשלח",
             label: err.response.data,
           });
         }
@@ -84,7 +84,7 @@ function LeadForm() {
       onFocus={() =>
         ReactGA.event({
           category: "Form",
-          action: "form_start",
+          action: "התחיל_למלא_טופס",
           label: "lead_form",
         })
       }
