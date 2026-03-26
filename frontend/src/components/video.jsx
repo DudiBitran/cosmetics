@@ -1,13 +1,12 @@
 import "../style/video.css";
+import videoFile from "../assets/video.mp4";
 function Video() {
   return (
     <div className="video-section">
       <span className="video-badge">צפי בתוצאה אמיתית</span>
-      <div className="video-overlay">
-        <button type="button" className="play-btn" aria-label="ניגון סרטון תדמית">
-          <span className="play-icon" />
-        </button>
-      </div>
+      <video className="video-player" controls playsInline poster="">
+        <source src={videoFile} type="video/mp4" />
+      </video>
     </div>
   );
 }
