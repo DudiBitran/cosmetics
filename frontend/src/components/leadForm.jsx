@@ -4,6 +4,7 @@ import "../style/leadForm.css";
 import leadService from "../../services/leadService";
 import { useState } from "react";
 import { useNavigate } from "react-router";
+import ReactGA from "react-ga4";
 function LeadForm() {
   const [serverError, setServerError] = useState("");
   const navigate = useNavigate();
@@ -48,6 +49,11 @@ function LeadForm() {
     onSubmit: async (values) => {
       try {
         const response = await leadService.createLead(values);
+        ReactGA.event({
+          category: "Form",
+          action: "form_submit",
+          label: "lead_form",
+        });
         setTimeout(
           () =>
             navigate("/success", {
@@ -56,18 +62,33 @@ function LeadForm() {
             }),
           1000,
         );
+
         return response;
       } catch (err) {
         if (err.response?.status >= 400) {
           const response = err.response.data;
           setServerError(response);
+          ReactGA.event({
+            category: "Form",
+            action: "form_error",
+            label: err.response.data,
+          });
         }
       }
     },
   });
 
   return (
-    <form onSubmit={leadValues.handleSubmit}>
+    <form
+      onSubmit={leadValues.handleSubmit}
+      onFocus={() =>
+        ReactGA.event({
+          category: "Form",
+          action: "form_start",
+          label: "lead_form",
+        })
+      }
+    >
       {serverError && <div className="serverError">{serverError}</div>}
       <div>
         <label htmlFor="name">
