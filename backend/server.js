@@ -8,6 +8,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/api", require("./routes/leadRoute"));
+app.get("/", (req, res) => {
+  res.send("OK");
+});
 
 const frontendPath = path.join(__dirname, "../frontend/dist");
 app.use(express.static(frontendPath));
