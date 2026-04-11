@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Varela+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Heebo:wght@100..900&family=Varela+Round&display=swap");
 :root {
   --bg: #f7f3ee;
   --section: #efe7de;
@@ -26,12 +27,25 @@
 }
 
 body {
-  font-family:"Varela Round", sans-serif ;
+  font-family: "Heebo", sans-serif;
   color: var(--text);
   background:
-    linear-gradient(140deg, rgba(239, 231, 222, 0.65) 0%, rgba(247, 243, 238, 0.95) 40%, rgba(255, 255, 255, 0.9) 100%),
-    radial-gradient(circle at 82% 18%, rgba(214, 193, 166, 0.22) 0, transparent 34%),
-    radial-gradient(circle at 18% 82%, rgba(191, 163, 124, 0.16) 0, transparent 30%),
+    linear-gradient(
+      140deg,
+      rgba(239, 231, 222, 0.65) 0%,
+      rgba(247, 243, 238, 0.95) 40%,
+      rgba(255, 255, 255, 0.9) 100%
+    ),
+    radial-gradient(
+      circle at 82% 18%,
+      rgba(214, 193, 166, 0.22) 0,
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 18% 82%,
+      rgba(191, 163, 124, 0.16) 0,
+      transparent 30%
+    ),
     var(--bg);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -42,8 +56,8 @@ main {
   min-height: 100vh;
 }
 
-@import "./style/mainPage.css";
+/* @import "./style/mainPage.css"; */
 @import "./style/header.css";
-@import "./style/video.css";
+@import "./style/VideoPlayer.css";
 @import "./style/leadForm.css";
 @import "./style/success.css";

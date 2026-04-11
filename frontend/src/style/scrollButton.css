@@ -1,0 +1,29 @@
+.scroll-btn {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+
+  width: 54px;
+  height: 54px;
+
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+
+  background: var(--focus);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+  z-index: 999;
+  font-size: 30px;
+}
+
+.scroll-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+}

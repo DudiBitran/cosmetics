@@ -8,7 +8,11 @@ form {
   padding: 2.3rem 2rem 2.1rem;
   border-radius: 22px;
   background:
-    radial-gradient(circle at 90% 8%, rgba(214, 193, 166, 0.18), transparent 34%),
+    radial-gradient(
+      circle at 90% 8%,
+      rgba(214, 193, 166, 0.18),
+      transparent 34%
+    ),
     linear-gradient(180deg, var(--card) 0%, #faf5ef 100%);
   border: 1px solid #ded2c3;
   box-shadow:
@@ -36,7 +40,10 @@ input {
   font-size: 1rem;
   color: var(--text);
   background: #fffdfb;
-  transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
 }
 
 input::placeholder {
@@ -51,7 +58,9 @@ input:hover {
 input:focus {
   outline: none;
   border-color: var(--cta);
-  box-shadow: 0 0 0 4px var(--focus), 0 8px 18px rgba(97, 74, 49, 0.13);
+  box-shadow:
+    0 0 0 4px var(--focus),
+    0 8px 18px rgba(97, 74, 49, 0.13);
 }
 
 form button[type="submit"] {
@@ -66,7 +75,10 @@ form button[type="submit"] {
   font-weight: 700;
   letter-spacing: 0.15px;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.25s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.25s ease;
 }
 
 form button[type="submit"]:hover {
@@ -94,6 +106,12 @@ form button[type="submit"]:active {
   background: #fff3f3;
   color: #b35f5f;
   font-size: 0.92rem;
+}
+
+.form-header {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
 }
 
 @media (max-width: 768px) {

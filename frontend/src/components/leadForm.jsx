@@ -90,6 +90,7 @@ function LeadForm() {
       }
     >
       {serverError && <div className="serverError">{serverError}</div>}
+      <div className="form-header">השאירי פרטים ואחזור אלייך באופן אישי!</div>
       <div>
         <label htmlFor="name">
           שם מלא <span className="red-dot">*</span>
