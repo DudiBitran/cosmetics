@@ -19,7 +19,7 @@ function SuccessPage() {
       <div>
         <Video
           title="ten mistakes video"
-          video="/Ten_Mistakes.mp4"
+          video="https://res.cloudinary.com/durmd6voq/video/upload/v1775929905/Ten_Mistakes_bckdvn.mp4"
           type="video/mp4"
           header="עד שאני חוזרת אלייך בואי תצפי בסרטון הבא"
         />

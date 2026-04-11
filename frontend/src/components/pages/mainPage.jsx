@@ -15,7 +15,7 @@ function MainPage() {
       <section className="videoSection">
         <Video
           title="landing-page-video"
-          video="../../../public/Landing_page_Video.mp4"
+          video="https://res.cloudinary.com/durmd6voq/video/upload/v1775929872/Landing_Page_Video_iwvqmk.mp4"
           type="video/mp4"
           header="בואי תצפי בסרטון הבא"
         />
