@@ -2,7 +2,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import Video from "../video";
 import "../../style/success.css";
-import videoMov from "../../assets/ten_mistakes.mov";
+
 function SuccessPage() {
   const location = useLocation();
   const navigate = useNavigate();
@@ -19,8 +19,8 @@ function SuccessPage() {
       <div>
         <Video
           title="ten mistakes video"
-          videoMov={videoMov}
-          type="video/quicktime"
+          video="/Ten_Mistakes.mp4"
+          type="video/mp4"
           header="עד שאני חוזרת אלייך בואי תצפי בסרטון הבא"
         />
       </div>

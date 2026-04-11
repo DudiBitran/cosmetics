@@ -27,13 +27,13 @@ const plyrOptions = {
   ],
 };
 
-function Video({ title, videoMov, type, header }) {
+function Video({ title, video, type, header }) {
   const source = useMemo(
     () => ({
       type: "video",
-      sources: [{ src: videoMov, type }],
+      sources: [{ src: video, type }],
     }),
-    [videoMov, type],
+    [video, type],
   );
 
   useEffect(() => {

@@ -2,7 +2,6 @@ import Header from "../header";
 import Video from "../video";
 import LeadForm from "../leadForm";
 import Content from "../content";
-import videoMov from "../../assets/landing_page_video.mov";
 import ScrollToLeadFormButton from "../scrollButton";
 import Footer from "../footer";
 
@@ -16,8 +15,8 @@ function MainPage() {
       <section className="videoSection">
         <Video
           title="landing-page-video"
-          videoMov={videoMov}
-          type="video/quicktime"
+          video="../../../public/Landing_page_Video.mp4"
+          type="video/mp4"
           header="בואי תצפי בסרטון הבא"
         />
       </section>
