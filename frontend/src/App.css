@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Varela+Round&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Heebo:wght@100..900&family=Varela+Round&display=swap");
+/* @import "./style/mainPage.css"; */
+@import "./style/header.css";
+@import "./style/VideoPlayer.css";
+@import "./style/leadForm.css";
+@import "./style/success.css";
 :root {
   --bg: #f7f3ee;
   --section: #efe7de;
@@ -24,6 +29,12 @@
   padding: 0;
   box-sizing: border-box;
   direction: rtl;
+  max-width: 100%;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 body {
@@ -55,9 +66,3 @@ body {
 main {
   min-height: 100vh;
 }
-
-/* @import "./style/mainPage.css"; */
-@import "./style/header.css";
-@import "./style/VideoPlayer.css";
-@import "./style/leadForm.css";
-@import "./style/success.css";
